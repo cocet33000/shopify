@@ -8,8 +8,8 @@ class Callback_ extends React.Component {
 
     static async getInitialProps({ query }) {
         const userAgent = query ? query : 'hoge';
-        const client_id = 'ef116a9b15859c31f10a8a6218872712';
-        const client_secret = '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';
+        const client_id = '374c1b129b22debeea8daf896c08e7ec';
+        const client_secret = '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';
         const url = 'https://bayashi-test2.myshopify.com/admin/oauth/access_token';
         const code = query.code;
         console.log(code);
