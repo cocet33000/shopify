@@ -19,10 +19,11 @@ class Callback_ extends React.Component {
             code: code,
         };
         const body = JSON.stringify(obj);
+        const method = 'POST';
         const headers = {
             Accept: 'application/json',
+            'Content-Type': 'application/json',
         };
-        const method = 'POST';
         fetch(url, { method, headers, body })
             .then((res) => res.json())
             .then(console.log)
