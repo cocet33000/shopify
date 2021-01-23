@@ -19,9 +19,9 @@ class Home_ extends React.Component {
         return <ImageCard key={index} src={item} />;
     };
 
-    console.log('hoge')
 
     render() {
+        console.log('hoge')
         return (
             <div>
                 {/* Header領域 */}
