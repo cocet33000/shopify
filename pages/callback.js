@@ -13,16 +13,17 @@ class Callback_ extends React.Component {
         const url = 'https://bayashi-test2.myshopify.com/admin/oauth/access_token';
         const code = query.code;
         console.log(code);
-        const data = {
+        const obj = {
             client_id: client_id,
             client_secret: client_secret,
             code: code,
         };
+        const body = JSON.stringify(obj);
         const headers = {
             Accept: 'application/json',
         };
         const method = 'POST';
-        fetch(url, { method, headers, data })
+        fetch(url, { method, headers, body })
             .then((res) => res.json())
             .then(console.log)
             .catch(console.error);
