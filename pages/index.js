@@ -19,9 +19,15 @@ class Home_ extends React.Component {
         return <ImageCard key={index} src={item} />;
     };
 
+    static async getInitialProps({ req }) {
+        const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
+        console.log(req.headers);
+        return { userAgent };
+    }
 
     render() {
-        console.log('hoge')
+        console.log('hoge');
+        console.log(this.getInitialProps);
         return (
             <div>
                 {/* Header領域 */}
