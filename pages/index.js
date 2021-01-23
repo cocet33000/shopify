@@ -19,6 +19,8 @@ class Home_ extends React.Component {
         return <ImageCard key={index} src={item} />;
     };
 
+    console.log('hoge')
+
     render() {
         return (
             <div>
