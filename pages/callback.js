@@ -30,6 +30,7 @@ class Callback_ extends React.Component {
     }
 
     render() {
+        this.props.getInitialProps;
         return <div>hoge</div>;
     }
 }
